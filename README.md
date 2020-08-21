@@ -25,13 +25,13 @@ The required packages to download are:
 
 
 STEP 1: creating an environment:
-# conda create -n <your env name>(say tf1.12) pip python=3.5
+ conda create -n <your env name>(say tf1.12) pip python=3.5
 
 NOTE: It is better to use python 3.5 with tensorflow 1.12
 
 STEP 2:Activate the environment
 
-# conda activate tf1.12
+ conda activate tf1.12
 
 --> Lets say your base is at C:/abc/desktop
 Then download this model and extract onto a new folder (say tf1.12) 
@@ -42,20 +42,20 @@ Therefore, the working directory becomes : C:/abc/desktop/tf1.12
 STEP 3:(Under tf1.12 - your environment)
 INSTALLING TENSORFLOW
 
-# pip install --ignore-installed --upgrade tensorflow==1.12 (FOR CPU)
-# pip install --ignore-installed --upgrade tensorflow-gpu==1.12(FOR GPU)
+ pip install --ignore-installed --upgrade tensorflow==1.12 (FOR CPU)
+ pip install --ignore-installed --upgrade tensorflow-gpu==1.12(FOR GPU)
 
 STEP 4: Installing required packages:
 
-# conda install -c anaconda protobuf
-# pip install pillow lxml cython pandas jupyter-notebook matplotlib opencv-python (pip install separately)
+ conda install -c anaconda protobuf
+ pip install pillow lxml cython pandas jupyter-notebook matplotlib opencv-python (pip install separately)
 
 
 STEP 5: Configuring Pythonpath :
 under (#)
-# C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models
-# C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models/research
-# C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models/research/slim
+C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models
+C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models/research
+C:/abc/desktop/tf1.12/models/research : set PYTHONPATH = C:/abc/desktop/tf1.12/models/research/slim
 
 STEP 6: Compliling protobufs:
 under (#)
